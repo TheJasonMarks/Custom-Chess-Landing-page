@@ -17,9 +17,7 @@
             width: 150px; height: 150px; border-radius: 30px;
             margin: 0 auto 30px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
         }
-        h1 {
-            font-size: 2.5rem; margin-bottom: 10px; color: #E8D5B7;
-        }
+        h1 { font-size: 2.5rem; margin-bottom: 10px; color: #E8D5B7; }
         .tagline { font-size: 1.2rem; color: #9CA3AF; margin-bottom: 40px; }
         .features {
             background: rgba(232, 213, 183, 0.05); border-radius: 20px;
@@ -45,13 +43,32 @@
         .links a { color: #9CA3AF; text-decoration: none; margin: 0 15px; transition: color 0.2s; }
         .links a:hover { color: #E8D5B7; }
         .contact { margin-top: 30px; color: #9CA3AF; font-size: 0.9rem; }
-        .mature-notice {
-            background: rgba(181, 136, 99, 0.2); border: 1px solid #B58863;
-            border-radius: 10px; padding: 15px; margin-bottom: 30px; font-size: 0.9rem;
-            color: #E8D5B7;
-        }
         .play-btn { background: #7CB342 !important; color: #1a1a2e !important; font-size: 1.2rem; padding: 20px 50px !important; }
         .play-btn:hover { box-shadow: 0 10px 30px rgba(124, 179, 66, 0.4) !important; }
+        .dlc-section {
+            background: rgba(232, 213, 183, 0.05); border-radius: 20px;
+            padding: 30px; margin-bottom: 40px;
+            border: 1px solid rgba(232, 213, 183, 0.1);
+        }
+        .dlc-section h2 { color: #E8D5B7; margin-bottom: 10px; }
+        .dlc-section p { color: #9CA3AF; margin-bottom: 20px; font-size: 0.95rem; }
+        .dlc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+        .dlc-item {
+            background: rgba(181, 136, 99, 0.1); border-radius: 10px; padding: 20px;
+            border: 1px solid rgba(181, 136, 99, 0.3);
+        }
+        .dlc-item h3 { color: #E8D5B7; margin-bottom: 10px; font-size: 1rem; }
+        .dlc-item p { color: #9CA3AF; font-size: 0.85rem; margin-bottom: 15px; }
+        .dlc-btn {
+            display: inline-block; background: #B58863; color: #1a1a2e;
+            padding: 8px 20px; border-radius: 5px; text-decoration: none;
+            font-weight: bold; font-size: 0.85rem; transition: all 0.2s;
+        }
+        .dlc-btn:hover { background: #c9a077; }
+        .mature-warning {
+            background: rgba(220, 38, 38, 0.2); border: 1px solid #dc2626;
+            border-radius: 5px; padding: 8px; margin-top: 10px; font-size: 0.75rem; color: #fca5a5;
+        }
     </style>
 </head>
 <body>
@@ -61,8 +78,6 @@
         <p class="tagline">A unique text-based chess experience</p>
         
         <a href="https://play.customchess.net" class="store-button play-btn">Play Now Online</a>
-        
-        <div class="mature-notice">Rated 13+ - Contains optional Crude Humor DLC content</div>
 
         <div class="features">
             <h2>Features</h2>
@@ -74,8 +89,30 @@
                 <li>Multiple board themes</li>
                 <li>Game timer with multiple presets</li>
                 <li>Save and resume games</li>
-                <li>Optional DLC: Crude Humor piece sets</li>
             </ul>
+        </div>
+
+        <div class="dlc-section">
+            <h2>Downloadable Content</h2>
+            <p>Enhance your game with custom piece sets and overlays. Download and use on the web version.</p>
+            <div class="dlc-grid">
+                <div class="dlc-item">
+                    <h3>Diarrhea Word Set</h3>
+                    <p>Replace chess pieces with humorous text words</p>
+                    <a href="https://chess-mobile-15.preview.emergentagent.com/api/download-dlc/diarrhea-word-set" class="dlc-btn">Download</a>
+                    <div class="mature-warning">⚠️ Mature Content (13+)</div>
+                </div>
+                <div class="dlc-item">
+                    <h3>Piece Overlays</h3>
+                    <p>Add letter overlays to your custom pieces</p>
+                    <a href="https://chess-mobile-15.preview.emergentagent.com/api/download-dlc/overlays" class="dlc-btn">Download</a>
+                </div>
+                <div class="dlc-item">
+                    <h3>Corner Letters</h3>
+                    <p>Small letters in the corner of custom pieces</p>
+                    <a href="https://chess-mobile-15.preview.emergentagent.com/api/download-dlc/corner-letters" class="dlc-btn">Download</a>
+                </div>
+            </div>
         </div>
 
         <div class="download-section">
