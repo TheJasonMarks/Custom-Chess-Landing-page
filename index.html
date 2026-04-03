@@ -13,62 +13,38 @@
             min-height: 100vh;
         }
         .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; text-align: center; }
-        .logo {
-            width: 150px; height: 150px; border-radius: 30px;
-            margin: 0 auto 30px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
-        }
+        .logo { width: 150px; height: 150px; border-radius: 30px; margin: 0 auto 30px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5); }
         h1 { font-size: 2.5rem; margin-bottom: 10px; color: #E8D5B7; }
         .tagline { font-size: 1.2rem; color: #9CA3AF; margin-bottom: 40px; }
-        .features {
-            background: rgba(232, 213, 183, 0.05); border-radius: 20px;
-            padding: 30px; margin-bottom: 40px; text-align: left;
-            border: 1px solid rgba(232, 213, 183, 0.1);
-        }
+        .features { background: rgba(232, 213, 183, 0.05); border-radius: 20px; padding: 30px; margin-bottom: 40px; text-align: left; border: 1px solid rgba(232, 213, 183, 0.1); }
         .features h2 { color: #E8D5B7; margin-bottom: 20px; text-align: center; }
         .feature-list { list-style: none; color: #E8D5B7; }
         .feature-list li { padding: 12px 0; border-bottom: 1px solid rgba(232, 213, 183, 0.1); }
         .feature-list li:last-child { border-bottom: none; }
         .feature-list li::before { content: "♟"; margin-right: 15px; font-size: 1.2rem; color: #B58863; }
-        .download-section { margin-bottom: 40px; }
-        .download-section h2 { margin-bottom: 20px; color: #E8D5B7; }
-        .store-button {
-            display: inline-block; background: #B58863; color: #1a1a2e;
-            padding: 15px 40px; border-radius: 10px; text-decoration: none;
-            font-weight: bold; margin: 10px; transition: transform 0.2s, box-shadow 0.2s;
-        }
+        .store-button { display: inline-block; background: #B58863; color: #1a1a2e; padding: 15px 40px; border-radius: 10px; text-decoration: none; font-weight: bold; margin: 10px; transition: transform 0.2s, box-shadow 0.2s; }
         .store-button:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(181, 136, 99, 0.4); }
         .store-button.coming-soon { background: #444; color: #9CA3AF; cursor: default; }
-        .store-button.coming-soon:hover { transform: none; box-shadow: none; }
         .links { margin-top: 40px; padding-top: 30px; border-top: 1px solid rgba(232, 213, 183, 0.1); }
         .links a { color: #9CA3AF; text-decoration: none; margin: 0 15px; transition: color 0.2s; }
         .links a:hover { color: #E8D5B7; }
         .contact { margin-top: 30px; color: #9CA3AF; font-size: 0.9rem; }
         .play-btn { background: #7CB342 !important; color: #1a1a2e !important; font-size: 1.2rem; padding: 20px 50px !important; }
         .play-btn:hover { box-shadow: 0 10px 30px rgba(124, 179, 66, 0.4) !important; }
-        .dlc-section {
-            background: rgba(232, 213, 183, 0.05); border-radius: 20px;
-            padding: 30px; margin-bottom: 40px;
-            border: 1px solid rgba(232, 213, 183, 0.1);
-        }
+        .dlc-section { background: rgba(232, 213, 183, 0.05); border-radius: 20px; padding: 30px; margin-bottom: 40px; border: 1px solid rgba(232, 213, 183, 0.1); }
         .dlc-section h2 { color: #E8D5B7; margin-bottom: 10px; }
-        .dlc-section p { color: #9CA3AF; margin-bottom: 20px; font-size: 0.95rem; }
-        .dlc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
-        .dlc-item {
-            background: rgba(181, 136, 99, 0.1); border-radius: 10px; padding: 20px;
-            border: 1px solid rgba(181, 136, 99, 0.3);
-        }
-        .dlc-item h3 { color: #E8D5B7; margin-bottom: 10px; font-size: 1rem; }
+        .dlc-section > p { color: #9CA3AF; margin-bottom: 20px; font-size: 0.95rem; }
+        .dlc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; }
+        .dlc-item { background: rgba(181, 136, 99, 0.1); border-radius: 10px; padding: 20px; border: 1px solid rgba(181, 136, 99, 0.3); }
+        .dlc-item h3 { color: #E8D5B7; margin-bottom: 8px; font-size: 1rem; }
+        .dlc-item .price { color: #7CB342; font-size: 1.2rem; font-weight: bold; margin-bottom: 8px; }
         .dlc-item p { color: #9CA3AF; font-size: 0.85rem; margin-bottom: 15px; }
-        .dlc-btn {
-            display: inline-block; background: #B58863; color: #1a1a2e;
-            padding: 8px 20px; border-radius: 5px; text-decoration: none;
-            font-weight: bold; font-size: 0.85rem; transition: all 0.2s;
-        }
+        .dlc-btn { display: inline-block; background: #B58863; color: #1a1a2e; padding: 10px 25px; border-radius: 5px; text-decoration: none; font-weight: bold; font-size: 0.9rem; transition: all 0.2s; }
         .dlc-btn:hover { background: #c9a077; }
-        .mature-warning {
-            background: rgba(220, 38, 38, 0.2); border: 1px solid #dc2626;
-            border-radius: 5px; padding: 8px; margin-top: 10px; font-size: 0.75rem; color: #fca5a5;
-        }
+        .dlc-btn.cashapp { background: #00D632; }
+        .dlc-btn.cashapp:hover { background: #00b82b; }
+        .charity-note { background: rgba(0, 214, 50, 0.1); border: 1px solid #00D632; border-radius: 5px; padding: 8px; margin-top: 10px; font-size: 0.75rem; color: #7CB342; }
+        .mature-warning { background: rgba(220, 38, 38, 0.2); border: 1px solid #dc2626; border-radius: 5px; padding: 8px; margin-top: 8px; font-size: 0.75rem; color: #fca5a5; }
     </style>
 </head>
 <body>
@@ -94,23 +70,27 @@
 
         <div class="dlc-section">
             <h2>Downloadable Content</h2>
-            <p>Enhance your game with custom piece sets and overlays. Download and use on the web version.</p>
+            <p>Enhance your game with custom piece sets and overlays. Available for the web version.</p>
             <div class="dlc-grid">
                 <div class="dlc-item">
                     <h3>Diarrhea Word Set</h3>
+                    <div class="price">$1.00</div>
                     <p>Replace chess pieces with humorous text words</p>
-                    <a href="https://chess-mobile-15.preview.emergentagent.com/api/download-dlc/diarrhea-word-set" class="dlc-btn">Download</a>
+                    <a href="https://cash.app/$hopeprojectusa/1" class="dlc-btn cashapp">Buy with CashApp</a>
+                    <div class="charity-note">💚 100% donated to The Hope Project</div>
                     <div class="mature-warning">⚠️ Mature Content (13+)</div>
                 </div>
                 <div class="dlc-item">
                     <h3>Piece Overlays</h3>
+                    <div class="price">$1.00</div>
                     <p>Add letter overlays to your custom pieces</p>
-                    <a href="https://chess-mobile-15.preview.emergentagent.com/api/download-dlc/overlays" class="dlc-btn">Download</a>
+                    <a href="https://play.customchess.net/web-store" class="dlc-btn">Buy in Store</a>
                 </div>
                 <div class="dlc-item">
                     <h3>Corner Letters</h3>
+                    <div class="price">$1.00</div>
                     <p>Small letters in the corner of custom pieces</p>
-                    <a href="https://chess-mobile-15.preview.emergentagent.com/api/download-dlc/corner-letters" class="dlc-btn">Download</a>
+                    <a href="https://play.customchess.net/web-store" class="dlc-btn">Buy in Store</a>
                 </div>
             </div>
         </div>
